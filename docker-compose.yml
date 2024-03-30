@@ -1,0 +1,15 @@
+# docker-compose build
+# docker-compose up
+# docker-compose down
+
+version: '3.3'
+
+services:
+    backend:
+        hostname: backend
+        build: .
+        volumes:
+            - .:/app
+        ports:
+            - '80:80'
+        
