@@ -10,3 +10,7 @@ async def root():
 @app.get("/hello")
 async def root():
     return {"message": "Hello World from /hello"}
+
+@app.get("/get")
+async def root():
+    return {"message": "Hello get"}
